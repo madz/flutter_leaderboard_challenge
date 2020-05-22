@@ -14,3 +14,15 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+## Android Phone
+<div style="display:flex;flex-direction:row;">
+        <img src="screenshots/android_phone.png" alt="screen_01" height="400" />
+       
+</div>
+
+## Android Tablet
+<div style="display:flex;flex-direction:row;">
+      <img src="screenshots/android_tablet.png" alt="screen_02" height="400" />
+</div>
+
