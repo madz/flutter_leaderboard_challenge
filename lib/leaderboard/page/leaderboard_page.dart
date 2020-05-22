@@ -65,7 +65,7 @@ class LeaderBoardPage extends StatelessWidget {
           color: Colors.transparent,
           child: Padding(
             padding: EdgeInsets.symmetric(
-              horizontal: appSizeConfig.screenHeight * .05,
+              horizontal: appSizeConfig.screenHeight * 0.001,
             ),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
