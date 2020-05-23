@@ -30,7 +30,7 @@ class HighlightedIconButton extends StatelessWidget {
         },
         child: Padding(
           padding: EdgeInsets.symmetric(
-            vertical: appSizeConfig.screenHeight * .005,
+            vertical: appSizeConfig.screenHeight * .0075,
             horizontal: appSizeConfig.screenWidth * .05,
           ),
           child: Row(
