@@ -34,7 +34,10 @@ class HighlightedFilterButton extends StatelessWidget {
             horizontal: appSizeConfig.screenWidth * .05,
           ),
           child: Padding(
-            padding: const EdgeInsets.only(left: 8.0, top: 4.0),
+            padding: EdgeInsets.symmetric(
+              vertical: appSizeConfig.screenHeight * .001,
+              horizontal: appSizeConfig.screenWidth * .025,
+            ),
             child: Text(
               'All time',
               style: GoogleFonts.poppins(

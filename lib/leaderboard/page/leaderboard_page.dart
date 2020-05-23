@@ -12,46 +12,48 @@ class LeaderBoardPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final appSizeConfig = AppSizeConfig(context);
-    return Stack(
-      children: [
-        buildLeaderboardList(appSizeConfig, context),
-        buildFilters(appSizeConfig, context),
-        Positioned.fill(
-          child: Align(
-            alignment: Alignment.topCenter,
-            child: Container(
-              height: appSizeConfig.screenHeight *
-                  .27, // 27% of the total height height
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.only(
-                  bottomLeft: Radius.circular(18),
-                  bottomRight: Radius.circular(18),
+    return Scaffold(
+      body: Stack(
+        children: [
+          buildLeaderboardList(appSizeConfig, context),
+          buildFilters(appSizeConfig, context),
+          Positioned.fill(
+            child: Align(
+              alignment: Alignment.topCenter,
+              child: Container(
+                height: appSizeConfig.screenHeight *
+                    .27, // 27% of the total height height
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.only(
+                    bottomLeft: Radius.circular(18),
+                    bottomRight: Radius.circular(18),
+                  ),
+                  color: AppConstants.orangeyColor,
                 ),
-                color: AppConstants.orangeyColor,
               ),
             ),
           ),
-        ),
-        Positioned.fill(
-          child: Align(
-            alignment: Alignment.topCenter,
-            child: Container(
-              height:
-                  appSizeConfig.screenHeight * .12, // 12% of the device height
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.only(
-                  bottomLeft: Radius.circular(18),
-                  bottomRight: Radius.circular(18),
+          Positioned.fill(
+            child: Align(
+              alignment: Alignment.topCenter,
+              child: Container(
+                height: appSizeConfig.screenHeight *
+                    .12, // 12% of the device height
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.only(
+                    bottomLeft: Radius.circular(18),
+                    bottomRight: Radius.circular(18),
+                  ),
+                  color: AppConstants.purpleyColor,
                 ),
-                color: AppConstants.purpleyColor,
               ),
             ),
           ),
-        ),
-        buildLeaderboardHighlight(appSizeConfig),
-        buildBottomMenuIcons(appSizeConfig),
-        buildLeadersProfile(appSizeConfig, context),
-      ],
+          buildLeaderboardHighlight(appSizeConfig),
+          buildBottomMenuIcons(appSizeConfig),
+          buildLeadersProfile(appSizeConfig, context),
+        ],
+      ),
     );
   }
 
