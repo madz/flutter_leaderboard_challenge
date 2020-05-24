@@ -36,3 +36,8 @@ samples, guidance on mobile development, and a full API reference.
 <div style="display:flex;flex-direction:row;">
       <img src="screenshots/ipad_pro.png" alt="screen_02" height="400" />
 </div>
+
+## Web
+<div style="display:flex;flex-direction:row;">
+      <img src="screenshots/web.png" alt="screen_02" height="400" />
+</div>
